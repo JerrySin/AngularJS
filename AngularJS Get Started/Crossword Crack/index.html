@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html ng-app="jm.cw">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js" data-require="angular.js@1.3.na-beta.5"
+        data-semver="1.6.5"></script>
+        <script src="https://unpkg.com/popper.js@1.12.9/dist/umd/popper.min.js" data-require="popper.js@1.12.9" data-semver="1.12.9"></script>
+        <link href="style.css" rel="stylesheet" />
+        <script src="app.js"></script>
+        <script src="script.js"></script>
+        <script src="CrosswordComponent.js"></script>
+</head>
+
+<body>
+    <div class="ticketPane">
+        <h1>Crossword (11 x 11)</h1>
+        <div id="crosswordGridContainer">
+            <div id="crosswordGrid">
+                <div class="G"></div>
+                <div class="R"></div>
+                <div class="A"></div>
+                <div class="D"></div>
+                <div class="E"></div>
+                <div class="na"></div>
+                <div class="V"></div>
+                <div class="A"></div>
+                <div class="L"></div>
+                <div class="U"></div>
+                <div class="E"></div>
+                <div class="R"></div>
+                <div class="na"></div>
+                <div class="na"></div>
+                <div class="na"></div>
+                <div class="na"></div>
+                <div class="S"></div>
+                <div class="na"></div>
+                <div class="na"></div>
+                <div class="na"></div>
+                <div class="S"></div>
+                <div class="na"></div>
+                <div class="A"></div>
+                <div class="na"></div>
+                <div class="S"></div>
+                <div class="na"></div>
+                <div class="na"></div>
+                <div class="L"></div>
+                <div class="na"></div>
+                <div class="I"></div>
+                <div class="T"></div>
+                <div class="E"></div>
+                <div class="M"></div>
+                <div class="B"></div>
+                <div class="A"></div>
+                <div class="T"></div>
+                <div class="H"></div>
+                <div class="R"></div>
+                <div class="O"></div>
+                <div class="O"></div>
+                <div class="M"></div>
+                <div class="na"></div>
+                <div class="na"></div>
+                <div class="na"></div>
+                <div class="na"></div>
+                <div class="na"></div>
+                <div class="A"></div>
+                <div class="na"></div>
+                <div class="na"></div>
+                <div class="G"></div>
+                <div class="na"></div>
+                <div class="P"></div>
+                <div class="na"></div>
+                <div class="na"></div>
+                <div class="B"></div>
+                <div class="na"></div>
+                <div class="A"></div>
+                <div class="L"></div>
+                <div class="P"></div>
+                <div class="H"></div>
+                <div class="A"></div>
+                <div class="B"></div>
+                <div class="E"></div>
+                <div class="T"></div>
+                <div class="na"></div>
+                <div class="U"></div>
+                <div class="I"></div>
+                <div class="na"></div>
+                <div class="E"></div>
+                <div class="na"></div>
+                <div class="na"></div>
+                <div class="N"></div>
+                <div class="na"></div>
+                <div class="D"></div>
+                <div class="na"></div>
+                <div class="na"></div>
+                <div class="I"></div>
+                <div class="C"></div>
+                <div class="O"></div>
+                <div class="M"></div>
+                <div class="I"></div>
+                <div class="C"></div>
+                <div class="na"></div>
+                <div class="na"></div>
+                <div class="E"></div>
+                <div class="A"></div>
+                <div class="R"></div>
+                <div class="L"></div>
+                <div class="E"></div>
+                <div class="na"></div>
+                <div class="A"></div>
+                <div class="na"></div>
+                <div class="I"></div>
+                <div class="na"></div>
+                <div class="A"></div>
+                <div class="na"></div>
+                <div class="R"></div>
+                <div class="na"></div>
+                <div class="D"></div>
+                <div class="na"></div>
+                <div class="S"></div>
+                <div class="T"></div>
+                <div class="A"></div>
+                <div class="T"></div>
+                <div class="I"></div>
+                <div class="C"></div>
+                <div class="na"></div>
+                <div class="E"></div>
+                <div class="W"></div>
+                <div class="E"></div>
+                <div class="na"></div>
+                <div class="na"></div>
+                <div class="E"></div>
+                <div class="na"></div>
+                <div class="Y"></div>
+                <div class="na"></div>
+                <div class="E"></div>
+                <div class="na"></div>
+                <div class="A"></div>
+                <div class="na"></div>
+                <div class="R"></div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <div class="ticketPane" ng-controller="CrosswordController">
+        <h1>Crossword (populated by array)</h1>
+        <div id="crosswordGridContainer">
+            <div id="crosswordGrid">
+                <div class="{{letter.char}}" ng-click="showStatistics(letter.char)" ng-repeat="letter in letters"></div>
+            </div>
+            <div id="statisticsGrid">
+                <div>Char: {{}}</div>
+                <div>Words: {{}}</div>
+                <div>Occurrences: <span ng-bind="count"></span></div>
+                <div>Position: {{}}</div>
+                <div>In Words: {{}}</div>
+                <div>2-D Crosssing: {{}}</div>
+                <div>3-D Crosssing: {{}}</div>
+                <div>4-D Crosssing: {{}}</div>
+            </div>
+        </div>
+        <div id="statisticsGridContainer">
+            <div id="globalCount">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

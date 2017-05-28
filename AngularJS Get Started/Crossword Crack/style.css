@@ -1,0 +1,124 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.ticketPane #crosswordGridContainer {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.ticketPane #crosswordGrid {
+    width: 275px;
+    height: 275px;
+    border: 2px solid black;
+    background-color: #EEE;
+    cursor: pointer;
+    float: left;
+}
+
+.ticketPane #statisticsGrid {
+    width: 275px;
+    height: 275px;
+    margin-left: 50px;
+    float: left;
+}
+
+#crosswordGrid div {
+    border: 1px solid black;
+    width: 23px;
+    height: 23px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    z-index: 15;
+    text-align: center;
+}
+
+#crosswordGrid .na {
+    background-color: #333;
+}
+
+#crosswordGrid .A::after {
+    content:'A';
+}
+#crosswordGrid .B::after {
+    content:'B';
+}
+#crosswordGrid .C::after {
+    content:'C';
+}
+#crosswordGrid .D::after {
+    content:'D';
+}
+#crosswordGrid .E::after {
+    content:'E';
+}
+#crosswordGrid .F::after {
+    content:'F';
+}
+#crosswordGrid .G::after {
+    content:'G';
+}
+#crosswordGrid .H::after {
+    content:'H';
+}
+#crosswordGrid .I::after {
+    content:'I';
+}
+#crosswordGrid .J::after {
+    content:'J';
+}
+#crosswordGrid .K::after {
+    content:'K';
+}
+#crosswordGrid .L::after {
+    content:'L';
+}
+#crosswordGrid .M::after {
+    content:'M';
+}
+#crosswordGrid .N::after {
+    content:'N';
+}
+#crosswordGrid .O::after {
+    content:'O';
+}
+#crosswordGrid .P::after {
+    content:'P';
+}
+#crosswordGrid .Q::after {
+    content:'Q';
+}
+#crosswordGrid .R::after {
+    content:'R';
+}
+#crosswordGrid .S::after {
+    content:'S';
+}
+#crosswordGrid .T::after {
+    content:'T';
+}
+#crosswordGrid .U::after {
+    content:'U';
+}
+#crosswordGrid .V::after {
+    content:'V';
+}
+#crosswordGrid .W::after {
+    content:'W';
+}
+#crosswordGrid .X::after {
+    content:'X';
+}
+#crosswordGrid .Y::after {
+    content:'Y';
+}
+#crosswordGrid .Z::after {
+    content:'Z';
+}

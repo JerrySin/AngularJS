@@ -1,0 +1,18 @@
+<div id="cityResult">Result of: {{cityname}}</div>
+<div class="card-deck mb-3 text-center">
+    <!-- View Template Start -->
+    <div class="card mb-4 box-shadow" ng-repeat="city in cities | orderBy:cityOrder">
+        <div class="card-header">
+            <h4 class="my-0 font-weight-normal">{{ city.name | uppercase }}</h4>
+        </div>
+        <div class="card-body">
+            <div><img class="flag" ng-src="{{ city.flag }}" title="{{ city.name }}"></div>
+            <h1 class="card-title pricing-card-title">{{ city.alpha3Code | lowercase}}</h1>
+            <ul class="list-unstyled mt-3 mb-4" ng-repeat="alt in city.altSpellings">
+                <li>{{ alt }}</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-primary" ng-class="{'btn-outline-primary':$first}">{{ city.name }}</button>
+        </div>
+    </div>
+    <!-- View Template End -->
+</div>

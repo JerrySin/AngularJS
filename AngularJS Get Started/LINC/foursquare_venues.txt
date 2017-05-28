@@ -1,0 +1,503 @@
+Jmov Electronics
+https://api.foursquare.com/v2/venues/5ac7ce113e6741083514919d?client_id=DATPD0M5UUFW5N2BAQZZQUTBPDX14O01JQJLY4ZBI0ZHKBXG&client_secret=OBXAKZIYDJBS0TRCMCPACTE3IPR35WP0GFBMBJZSTVLQZ2EQ&v=20180407
+
+The Spa @ Nadia
+https://api.foursquare.com/v2/venues/5040eccfe4b09690b187b4ca?client_id=DATPD0M5UUFW5N2BAQZZQUTBPDX14O01JQJLY4ZBI0ZHKBXG&client_secret=OBXAKZIYDJBS0TRCMCPACTE3IPR35WP0GFBMBJZSTVLQZ2EQ&v=20180407
+
+Markham Stouffville Hospital
+https://api.foursquare.com/v2/venues/4e206f851838712abe669040?client_id=DATPD0M5UUFW5N2BAQZZQUTBPDX14O01JQJLY4ZBI0ZHKBXG&client_secret=OBXAKZIYDJBS0TRCMCPACTE3IPR35WP0GFBMBJZSTVLQZ2EQ&v=20180407
+
+
+
+{
+    "meta": {
+        "code": 200,
+        "requestId": "5ac8f88b1ed21978e830f290"
+    },
+    "response": {
+        "venue": {
+            "id": "5ac7ce113e6741083514919d",
+            "name": "Jmov Electronics",
+            "contact": {},
+            "location": {
+                "address": "63 Pinto Drive",
+                "lat": 43.79229,
+                "lng": -79.338104,
+                "labeledLatLngs": [
+                    {
+                        "label": "display",
+                        "lat": 43.79229,
+                        "lng": -79.338104
+                    }
+                ],
+                "postalCode": "M2J 3T9",
+                "cc": "CA",
+                "city": "Toronto",
+                "state": "ON",
+                "country": "Canada",
+                "formattedAddress": [
+                    "63 Pinto Drive",
+                    "Toronto ON M2J 3T9",
+                    "Canada"
+                ]
+            },
+            "canonicalUrl": "https://foursquare.com/v/jmov-electronics/5ac7ce113e6741083514919d",
+            "categories": [
+                {
+                    "id": "4bf58dd8d48988d122951735",
+                    "name": "Electronics Store",
+                    "pluralName": "Electronics Stores",
+                    "shortName": "Electronics",
+                    "icon": {
+                        "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/technology_",
+                        "suffix": ".png"
+                    },
+                    "primary": true
+                }
+            ],
+            "verified": false,
+            "stats": {
+                "tipCount": 0,
+                "usersCount": 0,
+                "checkinsCount": 0,
+                "visitsCount": 0
+            },
+            "likes": {
+                "count": 1,
+                "groups": [
+                    {
+                        "type": "others",
+                        "count": 1,
+                        "items": [
+                            {
+                                "id": "189221224",
+                                "firstName": "Jerry",
+                                "lastName": "Sin",
+                                "gender": "male",
+                                "photo": {
+                                    "prefix": "https://igx.4sqi.net/img/user/",
+                                    "suffix": "/189221224_9SrqT7nI_wrgcFhxmj-4l3GxA8kFFhJSs01gjsbujWKa3WQziu73f_Wkdq-fxmQNq9OyODJ5H.png"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "summary": "1 Like"
+            },
+            "dislike": false,
+            "ok": false,
+            "allowMenuUrlEdit": true,
+            "beenHere": {
+                "count": 0,
+                "unconfirmedCount": 0,
+                "marked": false,
+                "lastCheckinExpiredAt": 0
+            },
+            "specials": {
+                "count": 0,
+                "items": []
+            },
+            "photos": {
+                "count": 1,
+                "groups": [
+                    {
+                        "type": "venue",
+                        "name": "Venue photos",
+                        "count": 1,
+                        "items": [
+                            {
+                                "id": "5ac7e61ad69ed059cc364e5f",
+                                "createdAt": 1523050010,
+                                "source": {
+                                    "name": "Foursquare for Android",
+                                    "url": "https://foursquare.com/download/#/android"
+                                },
+                                "prefix": "https://igx.4sqi.net/img/general/",
+                                "suffix": "/189221224_60acHY9CvAMRZ9zlTMY2aDzDSFwAED7CoHNgzFctot0.jpg",
+                                "width": 1000,
+                                "height": 641,
+                                "user": {
+                                    "id": "189221224",
+                                    "firstName": "Jerry",
+                                    "lastName": "Sin",
+                                    "gender": "male",
+                                    "photo": {
+                                        "prefix": "https://igx.4sqi.net/img/user/",
+                                        "suffix": "/189221224_9SrqT7nI_wrgcFhxmj-4l3GxA8kFFhJSs01gjsbujWKa3WQziu73f_Wkdq-fxmQNq9OyODJ5H.png"
+                                    }
+                                },
+                                "visibility": "public"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "reasons": {
+                "count": 0,
+                "items": []
+            },
+            "hereNow": {
+                "count": 0,
+                "summary": "Nobody here",
+                "groups": []
+            },
+            "createdAt": 1523043857,
+            "tips": {
+                "count": 0,
+                "groups": [
+                    {
+                        "type": "others",
+                        "name": "All tips",
+                        "count": 0,
+                        "items": []
+                    }
+                ]
+            },
+            "shortUrl": "https://4sq.com/2EqistG",
+            "timeZone": "America/Toronto",
+            "listed": {
+                "count": 0,
+                "groups": [
+                    {
+                        "type": "others",
+                        "name": "Lists from other people",
+                        "count": 0,
+                        "items": []
+                    }
+                ]
+            },
+            "pageUpdates": {
+                "count": 0,
+                "items": []
+            },
+            "inbox": {
+                "count": 0,
+                "items": []
+            },
+            "venueChains": [],
+            "attributes": {
+                "groups": []
+            },
+            "bestPhoto": {
+                "id": "5ac7e61ad69ed059cc364e5f",
+                "createdAt": 1523050010,
+                "source": {
+                    "name": "Foursquare for Android",
+                    "url": "https://foursquare.com/download/#/android"
+                },
+                "prefix": "https://igx.4sqi.net/img/general/",
+                "suffix": "/189221224_60acHY9CvAMRZ9zlTMY2aDzDSFwAED7CoHNgzFctot0.jpg",
+                "width": 1000,
+                "height": 641,
+                "visibility": "public"
+            },
+            "colors": {
+                "highlightColor": {
+                    "photoId": "5ac7e61ad69ed059cc364e5f",
+                    "value": -986896
+                },
+                "highlightTextColor": {
+                    "photoId": "5ac7e61ad69ed059cc364e5f",
+                    "value": -16777216
+                },
+                "algoVersion": 3
+            }
+        }
+    }
+}
+
+
+
+
+{
+    "meta": {
+        "code": 200,
+        "requestId": "5ac8fd0df594df7a3529ceb1"
+    },
+    "response": {
+        "venue": {
+            "id": "5040eccfe4b09690b187b4ca",
+            "name": "The Spa @ Nadia",
+            "contact": {},
+            "location": {
+                "lat": 43.79284769137422,
+                "lng": -79.3374381186339,
+                "labeledLatLngs": [
+                    {
+                        "label": "display",
+                        "lat": 43.79284769137422,
+                        "lng": -79.3374381186339
+                    }
+                ],
+                "cc": "CA",
+                "country": "Canada",
+                "formattedAddress": [
+                    "Canada"
+                ]
+            },
+            "canonicalUrl": "https://foursquare.com/v/the-spa--nadia/5040eccfe4b09690b187b4ca",
+            "categories": [
+                {
+                    "id": "4bf58dd8d48988d1ed941735",
+                    "name": "Spa",
+                    "pluralName": "Spas",
+                    "shortName": "Spa",
+                    "icon": {
+                        "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/spa_",
+                        "suffix": ".png"
+                    },
+                    "primary": true
+                }
+            ],
+            "verified": false,
+            "stats": {
+                "tipCount": 0,
+                "usersCount": 1,
+                "checkinsCount": 3,
+                "visitsCount": 3
+            },
+            "likes": {
+                "count": 0,
+                "groups": []
+            },
+            "dislike": false,
+            "ok": false,
+            "allowMenuUrlEdit": true,
+            "beenHere": {
+                "count": 0,
+                "unconfirmedCount": 0,
+                "marked": false,
+                "lastCheckinExpiredAt": 0
+            },
+            "specials": {
+                "count": 0,
+                "items": []
+            },
+            "photos": {
+                "count": 0,
+                "groups": []
+            },
+            "reasons": {
+                "count": 0,
+                "items": []
+            },
+            "hereNow": {
+                "count": 0,
+                "summary": "Nobody here",
+                "groups": []
+            },
+            "createdAt": 1346432207,
+            "tips": {
+                "count": 0,
+                "groups": [
+                    {
+                        "type": "others",
+                        "name": "All tips",
+                        "count": 0,
+                        "items": []
+                    }
+                ]
+            },
+            "shortUrl": "http://4sq.com/Q7PO3X",
+            "timeZone": "America/Toronto",
+            "listed": {
+                "count": 0,
+                "groups": [
+                    {
+                        "type": "others",
+                        "name": "Lists from other people",
+                        "count": 0,
+                        "items": []
+                    }
+                ]
+            },
+            "pageUpdates": {
+                "count": 0,
+                "items": []
+            },
+            "inbox": {
+                "count": 0,
+                "items": []
+            },
+            "venueChains": [],
+            "attributes": {
+                "groups": []
+            }
+        }
+    }
+}
+
+
+
+{
+    "meta": {
+        "code": 200,
+        "requestId": "5acbb8a84434b94d74879665"
+    },
+    "response": {
+        "venue": {
+            "id": "4e206f851838712abe669040",
+            "name": "Markham Stouffville Hospital",
+            "contact": {},
+            "location": {
+                "address": "377 Church St.",
+                "crossStreet": "9th Line",
+                "lat": 43.883575,
+                "lng": -79.23148,
+                "labeledLatLngs": [
+                    {
+                        "label": "display",
+                        "lat": 43.883575,
+                        "lng": -79.23148
+                    }
+                ],
+                "postalCode": "L6B 1A8",
+                "cc": "CA",
+                "city": "Markham",
+                "state": "ON",
+                "country": "Canada",
+                "formattedAddress": [
+                    "377 Church St. (9th Line)",
+                    "Markham ON L6B 1A8",
+                    "Canada"
+                ]
+            },
+            "canonicalUrl": "https://foursquare.com/v/markham-stouffville-hospital/4e206f851838712abe669040",
+            "categories": [
+                {
+                    "id": "4bf58dd8d48988d196941735",
+                    "name": "Hospital",
+                    "pluralName": "Hospitals",
+                    "shortName": "Hospital",
+                    "icon": {
+                        "prefix": "https://ss3.4sqi.net/img/categories_v2/building/medical_",
+                        "suffix": ".png"
+                    },
+                    "primary": true
+                }
+            ],
+            "verified": false,
+            "stats": {
+                "tipCount": 0,
+                "usersCount": 12,
+                "checkinsCount": 16,
+                "visitsCount": 17
+            },
+            "likes": {
+                "count": 0,
+                "groups": []
+            },
+            "dislike": false,
+            "ok": false,
+            "venueRatingBlacklisted": true,
+            "beenHere": {
+                "count": 0,
+                "unconfirmedCount": 0,
+                "marked": false,
+                "lastCheckinExpiredAt": 0
+            },
+            "specials": {
+                "count": 0,
+                "items": []
+            },
+            "photos": {
+                "count": 1,
+                "groups": [
+                    {
+                        "type": "venue",
+                        "name": "Venue photos",
+                        "count": 1,
+                        "items": [
+                            {
+                                "id": "5997523af8cbd46f1c2269d8",
+                                "createdAt": 1503089210,
+                                "prefix": "https://igx.4sqi.net/img/general/",
+                                "suffix": "/212169387_G7KyWYIlxwSSNdTM7PgCD64VYs6Zzjfxt-K0rduiiog.jpg",
+                                "width": 3888,
+                                "height": 2592,
+                                "user": {
+                                    "id": "212169387",
+                                    "firstName": "pivot_photos",
+                                    "gender": "none",
+                                    "photo": {
+                                        "prefix": "https://igx.4sqi.net/img/user/",
+                                        "suffix": "/blank_boy.png",
+                                        "default": true
+                                    },
+                                    "type": "page"
+                                },
+                                "visibility": "public"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "reasons": {
+                "count": 0,
+                "items": []
+            },
+            "hereNow": {
+                "count": 0,
+                "summary": "Nobody here",
+                "groups": []
+            },
+            "createdAt": 1310748549,
+            "tips": {
+                "count": 0,
+                "groups": [
+                    {
+                        "type": "others",
+                        "name": "All tips",
+                        "count": 0,
+                        "items": []
+                    }
+                ]
+            },
+            "shortUrl": "http://4sq.com/rsWWmH",
+            "timeZone": "America/Toronto",
+            "listed": {
+                "count": 0,
+                "groups": [
+                    {
+                        "type": "others",
+                        "name": "Lists from other people",
+                        "count": 0,
+                        "items": []
+                    }
+                ]
+            },
+            "pageUpdates": {
+                "count": 0,
+                "items": []
+            },
+            "inbox": {
+                "count": 0,
+                "items": []
+            },
+            "venueChains": [],
+            "attributes": {
+                "groups": []
+            },
+            "bestPhoto": {
+                "id": "5997523af8cbd46f1c2269d8",
+                "createdAt": 1503089210,
+                "prefix": "https://igx.4sqi.net/img/general/",
+                "suffix": "/212169387_G7KyWYIlxwSSNdTM7PgCD64VYs6Zzjfxt-K0rduiiog.jpg",
+                "width": 3888,
+                "height": 2592,
+                "visibility": "public"
+            },
+            "colors": {
+                "highlightColor": {
+                    "photoId": "5997523af8cbd46f1c2269d8",
+                    "value": -1513240
+                },
+                "highlightTextColor": {
+                    "photoId": "5997523af8cbd46f1c2269d8",
+                    "value": -16777216
+                },
+                "algoVersion": 3
+            }
+        }
+    }
+}
