@@ -68,12 +68,13 @@
         <div class="container" ng-controller="ContractController">
         <div class="card-deck mb-3 text-center">
             <!-- View Template Start -->
+            <div>{{ error }}</div>
             <div class="card mb-4 box-shadow" ng-repeat="city in cities">
             <div class="card-header">
                 <h4 class="my-0 font-weight-normal">{{ city.name }}</h4>
             </div>
             <div class="card-body">
-                <div><img class="flag" ng-src="{{ city.flag }}"></div>
+                <div><img class="flag" ng-src="{{ city.flag }}" title="{{ city.name }}"></div>
                 <h1 class="card-title pricing-card-title">{{ city.alpha3Code }}</h1>
                 <ul class="list-unstyled mt-3 mb-4" ng-repeat="alt in city.altSpellings">
                     <li>{{ alt }}</li>
