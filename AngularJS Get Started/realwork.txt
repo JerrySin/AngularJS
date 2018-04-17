@@ -1,7 +1,0 @@
-'Sun Jun 04 13:05:02 2017  -0400 10' ; 
-git add realwork.txt;
-GIT_AUTHOR_DATE='Sun Jun 04 13:05:02 2017  -0400' GIT_COMMITTER_DATE='Sun Jun 04 13:05:02 2017  -0400' git commit -m 'update'
-git push
-git rm realwork.txt
-git commit -m 'delete'
-git push
