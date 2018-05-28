@@ -1,0 +1,13 @@
+{
+  "name": "casinolink",
+  "title": "Casino Link",
+  "version": "1.0.0",
+  "description": "Online Casino Navigator",
+  "homepage": "https://casinolink.com/",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "G6 Tech",
+  "license": "MIT"
+}
