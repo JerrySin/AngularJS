@@ -5,7 +5,7 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
-// var browserSync = require('browser-sync').create();
+var browserSync = require('browser-sync').create();
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -21,16 +21,16 @@ gulp.task('say-hello', function(){
   console.log('Hello World!');
 });
 
-// // Copy third party libraries from /node_modules into /vendor
-// gulp.task('vendor', function() {
+// Copy third party libraries from /node_modules into /vendor
+gulp.task('vendor', function() {
 
-//   // Bootstrap
-//   gulp.src([
-//       './node_modules/bootstrap/dist/**/*',
-//       '!./node_modules/bootstrap/dist/css/bootstrap-grid*',
-//       '!./node_modules/bootstrap/dist/css/bootstrap-reboot*'
-//     ])
-//     .pipe(gulp.dest('./vendor/bootstrap'))
+  // Bootstrap
+  gulp.src([
+      './node_modules/bootstrap/dist/**/*',
+      '!./node_modules/bootstrap/dist/css/bootstrap-grid*',
+      '!./node_modules/bootstrap/dist/css/bootstrap-reboot*'
+    ])
+    .pipe(gulp.dest('./vendor/bootstrap'))
 
 //   // Font Awesome
 //   gulp.src([
@@ -55,7 +55,7 @@ gulp.task('say-hello', function(){
 //     ])
 //     .pipe(gulp.dest('./vendor/jquery-easing'))
 
-// });
+});
 
 // Compile SCSS
 gulp.task('css:compile', function() {
@@ -80,7 +80,7 @@ gulp.task('css:minify', ['css:compile'], function() {
       suffix: '.min'
     }))
     .pipe(gulp.dest('./css'))
-    // .pipe(browserSync.stream())
+    .pipe(browserSync.stream())
     ;
 });
 
@@ -109,28 +109,28 @@ gulp.task('css', ['css:compile', 'css:minify']);
 
 // Default task
 gulp.task('default', [
-  // 'css',
+  'css',
   //'js',
-  //'vendor'
+  'vendor'
 ]);
 
-// // Configure the browserSync task
-// gulp.task('browserSync', function() {
-//   browserSync.init({
-//     server: {
-//       baseDir: "./"
-//     }
-//   });
-// });
+// Configure the browserSync task
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: "./"
+    }
+  });
+});
 
 // Dev task
 gulp.task('dev', [
   'css',
   // 'js',
-  // 'browserSync'
+  'browserSync'
   ], function() {
   gulp.watch('./scss/*.scss', ['css']);
   // gulp.watch('./js/*.js', ['js']);
-  // gulp.watch('./*.html', browserSync.reload);
+  gulp.watch('./*.html', browserSync.reload);
 });
 

@@ -1,0 +1,22 @@
+{
+  "name": "casinolink",
+  "description": "Online Casino Navigator",
+  "main": "gulpfile.js",
+  "authors": [
+    "G6 Tech"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "client",
+    "packages"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
