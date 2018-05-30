@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-// var header = require('gulp-header');
+var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
@@ -13,7 +13,7 @@ var banner = ['/*!\n',
   ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
   ' * Licensed under <%= pkg.license %>\n',
   ' */\n',
-  ''
+  '\n'
 ].join('');
 
 
@@ -63,9 +63,9 @@ gulp.task('css:compile', function() {
     .pipe(sass.sync({
       outputStyle: 'expanded'
     }).on('error', sass.logError))
-    // .pipe(header(banner, {
-    //   pkg: pkg
-    // }))
+    .pipe(header(banner, {
+      pkg: pkg
+    }))
     .pipe(gulp.dest('./css'))
 });
 
