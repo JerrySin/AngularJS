@@ -4,6 +4,8 @@ var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
+var jshint = require('gulp-jshint');
+var jscs = require('gulp-jscs');
 var pkg = require('./package.json');
 var browserSync = require('browser-sync').create();
 
@@ -15,7 +17,6 @@ var banner = ['/*!\n',
   ' */\n',
   '\n'
 ].join('');
-
 
 gulp.task('say-hello', function(){
   console.log('Hello World!');
@@ -30,7 +31,7 @@ gulp.task('vendor', function() {
       '!./node_modules/bootstrap/dist/css/bootstrap-grid*',
       '!./node_modules/bootstrap/dist/css/bootstrap-reboot*'
     ])
-    .pipe(gulp.dest('./vendor/bootstrap'))
+    .pipe(gulp.dest('./vendor/bootstrap'));
 
 //   // Font Awesome
 //   gulp.src([
@@ -66,7 +67,7 @@ gulp.task('css:compile', function() {
     .pipe(header(banner, {
       pkg: pkg
     }))
-    .pipe(gulp.dest('./css'))
+    .pipe(gulp.dest('./css'));
 });
 
 // Minify CSS
@@ -87,30 +88,35 @@ gulp.task('css:minify', ['css:compile'], function() {
 // CSS
 gulp.task('css', ['css:compile', 'css:minify']);
 
-// // Minify JavaScript
-// gulp.task('js:minify', function() {
-//   return gulp.src([
-//       './js/*.js',
-//       '!./js/*.min.js'
-//     ])
-//     .pipe(uglify())
-//     .pipe(rename({
-//       suffix: '.min'
-//     }))
-//     .pipe(header(banner, {
-//       pkg: pkg
-//     }))
-//     .pipe(gulp.dest('./js'))
-//     .pipe(browserSync.stream());
-// });
+// Minify JavaScript
+gulp.task('js:minify', function() {
+  return gulp
+    .src([
+      './app/**/*.js',
+      '!./app/**/*.min.js'
+    ])
+    .pipe(jscs())
+    .pipe(jscs.reporter())
+    .pipe(jshint())
+    .pipe(jshint.reporter('jshint-stylish', {verbose:true}))
+    .pipe(uglify())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(header(banner, {
+      pkg: pkg
+    }))
+    .pipe(gulp.dest('./js'))
+    .pipe(browserSync.stream());
+});
 
-// // JS
-// gulp.task('js', ['js:minify']);
+// JS
+gulp.task('js', ['js:minify']);
 
 // Default task
 gulp.task('default', [
   'css',
-  //'js',
+  'js',
   'vendor'
 ]);
 
@@ -126,11 +132,11 @@ gulp.task('browserSync', function() {
 // Dev task
 gulp.task('dev', [
   'css',
-  // 'js',
+  'js',
   'browserSync'
   ], function() {
   gulp.watch('./scss/*.scss', ['css']);
-  // gulp.watch('./js/*.js', ['js']);
+  gulp.watch('./js/*.js', ['js']);
   gulp.watch('./*.html', browserSync.reload);
 });
 
